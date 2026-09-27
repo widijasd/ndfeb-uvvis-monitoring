@@ -1,7 +1,4 @@
-"""Synthetic UV-Vis spectra of rare-earth chloride leachates.
-
-The real calibration data behind the published models cannot be shared, so this
-module generates realistic stand-in data with the same layout:
+"""Synthetic UV-Vis spectra of rare-earth chloride and nitrate leachates.
 
 * spectra: DataFrame, one row per sample, one column per wavelength (230-900 nm, 2 nm steps)
 * concentrations: DataFrame with columns such as ``"Nd (3+)"`` (mol/L)

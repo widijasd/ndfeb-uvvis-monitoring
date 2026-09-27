@@ -4,7 +4,7 @@
 
 Python pipeline for in-line UV-Vis monitoring of hydrometallurgical NdFeB magnet recycling.
 It predicts Nd(III) and Pr(III) concentrations with PLS regression and classifies Fe(III)
-as High or Low with PLS-DA, from absorbance spectra of chloride leachates.
+as High or Low with PLS-DA, from absorbance spectra of chloride and nitrate leachates.
 
 The method is described in:
 
