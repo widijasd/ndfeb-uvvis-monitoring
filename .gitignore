@@ -1,0 +1,19 @@
+# --- Data protection: real process data and trained models never go in this repository ---
+data/
+*.csv
+*.xlsx
+*.mat
+*.joblib
+*.pkl
+
+# Python / tooling
+__pycache__/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+SDW/
+*.code-workspace
