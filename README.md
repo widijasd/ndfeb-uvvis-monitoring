@@ -46,7 +46,7 @@ cal_spectra, cal_conc, cal_labels = nu.simulate(250, seed=0)
 test_spectra, test_conc, test_labels = nu.simulate(60, seed=1)
 
 models = nu.fit_models(cal_spectra, cal_conc, cal_labels,
-                       n_components={"Nd (3+)": 1, "Pr (3+)": 2},
+                       n_components={"Nd (3+)": 1, "Pr (3+)": 3},
                        selected_wavelengths=nu.PUBLISHED_WAVELENGTHS)
 pred = nu.predict(test_spectra, models)
 print(nu.validation_table(test_conc, pred, ["Nd (3+)", "Pr (3+)"]))
@@ -79,9 +79,10 @@ the paper) and a small number of latent variables, checked against the RMSECV cu
 | Nd(III) | 496-510, 514-538, 560-598, 672-676, 684-690, 722-740, 744-766, 774-832, 842-882, 890-896 | 125 |
 | Pr(III) | 436-454, 466-470, 480-488, 596-604 | 23 |
 
-In the synthetic example, Nd uses 1 LV and Pr uses 2 LVs (Pr plus the Fe(III) tail that
-overlaps its 436-454 nm region). Additional LVs lower RMSECV slightly further, mainly by
-modelling the simulated wavelength shifts and minor band overlaps.
+As in the paper, Nd uses 1 LV and Pr uses 3 LVs. In the synthetic data the extra Pr LVs mainly
+account for the Fe(III) tail in the 436-454 nm region and smaller overlaps and band shifts. These are the package defaults
+(`nu.model.DEFAULT_COMPONENTS`). Additional LVs lower RMSECV only slightly further, mainly by
+modelling the simulated wavelength shifts.
 
 ## Synthetic validation
 
