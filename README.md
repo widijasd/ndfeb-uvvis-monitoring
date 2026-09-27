@@ -28,9 +28,22 @@ format (230 to 900 nm, 2 nm steps), so the whole pipeline runs end to end withou
 
 ## Install
 
+From the release (no git needed):
+
 ```bash
-pip install git+https://github.com/widijasd/ndfeb-uvvis-monitoring
-# or, for development
+pip install https://github.com/widijasd/ndfeb-uvvis-monitoring/releases/download/v0.1.0/ndfeb_uvvis-0.1.0-py3-none-any.whl
+```
+
+Or from the repository:
+
+```bash
+pip install "git+https://github.com/widijasd/ndfeb-uvvis-monitoring@v0.1.0"   # fixed version
+pip install "git+https://github.com/widijasd/ndfeb-uvvis-monitoring"          # latest code
+```
+
+For development:
+
+```bash
 git clone https://github.com/widijasd/ndfeb-uvvis-monitoring
 cd ndfeb-uvvis-monitoring
 pip install -e ".[dev]"
