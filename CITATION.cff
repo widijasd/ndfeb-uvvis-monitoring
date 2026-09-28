@@ -1,11 +1,14 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite the paper below."
+type: software
 title: "ndfeb-uvvis: UV-Vis chemometric pipeline for NdFeB recycling monitoring"
 authors:
   - family-names: Widijatmoko
     given-names: Samuel D.
 version: 0.1.0
+doi: 10.5281/zenodo.23011602
 license: MIT
+repository-code: "https://github.com/widijasd/ndfeb-uvvis-monitoring"
 preferred-citation:
   type: article
   title: "UV-Vis spectroscopy for monitoring the hydrometallurgical recycling of NdFeB magnets"
@@ -20,5 +23,6 @@ preferred-citation:
       given-names: G. A.
   journal: "Journal of Hazardous Materials Advances"
   year: 2026
+  volume: 24
   start: 101540
   doi: "10.1016/j.hazadv.2026.101540"
