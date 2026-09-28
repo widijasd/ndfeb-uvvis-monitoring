@@ -2,6 +2,8 @@
 
 [![tests](https://github.com/widijasd/ndfeb-uvvis-monitoring/actions/workflows/tests.yml/badge.svg)](https://github.com/widijasd/ndfeb-uvvis-monitoring/actions/workflows/tests.yml)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23011602.svg)](https://doi.org/10.5281/zenodo.23011602)
+
 Python pipeline for in-line UV-Vis monitoring of hydrometallurgical NdFeB magnet recycling.
 It predicts Nd(III) and Pr(III) concentrations with PLS regression and classifies Fe(III)
 as High or Low with PLS-DA, from absorbance spectra of chloride and nitrate leachates.
